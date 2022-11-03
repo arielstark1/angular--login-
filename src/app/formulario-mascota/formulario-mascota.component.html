@@ -1,15 +1,15 @@
-<h1>Registrar mascota</h1>
+<h1>Registrar personas</h1>
 <a href="//parzibyte.me/blog">By Parzibyte</a>
 <br><br>
 <form #formularioMascota="ngForm" (ngSubmit)="formularioEnviado()">
-	<input type="text" name="nombre" placeholder="Nombre de mascota" [(ngModel)]="mascotaModel.nombre">
+	<input type="text" name="nombre" placeholder="Nombre " [(ngModel)]="mascotaModel.nombre">
 	<br><br>
-	<input type="text" name="raza" placeholder="Raza de mascota" [(ngModel)]="mascotaModel.raza">
+	<input type="text" name="apellido" placeholder="apellido" [(ngModel)]="mascotaModel.apellido">
 	<br><br>
-	<input type="number" name="edad" placeholder="Edad de mascota" [(ngModel)]="mascotaModel.edad">
+	<input type="number" name="edad" placeholder="Edad " [(ngModel)]="mascotaModel.edad">
 	<br><br>
 	<button type="submit">Guardar</button>
 </form>
 
-<h2>Depurando mascota:</h2>
+<h2>Depurando dato:</h2>
 {{ mascotaModel | json }}
